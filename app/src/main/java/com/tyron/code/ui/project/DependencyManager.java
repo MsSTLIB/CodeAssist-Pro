@@ -109,9 +109,13 @@ public class DependencyManager {
         .add(new RepositoryModel("google-maven", "https://maven.google.com"))
         .add(new RepositoryModel("jitpack", "https://jitpack.io"))
         .add(new RepositoryModel("jcenter", "https://jcenter.bintray.com"))
-        .add(
-            new RepositoryModel(
-                "sonatype", "https://central.sonatype.com/repository/maven-snapshots"))
+        .add(new RepositoryModel(
+            "sonatype", "https://central.sonatype.com/repository/maven-snapshots"))
+
+        // Added repositories
+        .add(new RepositoryModel("chaquopy", "https://chaquo.com/maven"))
+        .add(new RepositoryModel("mozilla", "https://maven.mozilla.org/maven2"))
+
         .build();
   }
 
